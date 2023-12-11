@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DeveloperChrisP/product-preview)
-- Live Site URL: [Add live site URL here](https://developerchrisp.github.io/product-preview/)
+- Solution URL: [https://github.com/DeveloperChrisP/product-preview](https://github.com/DeveloperChrisP/product-preview)
+- Live Site URL: [https://developerchrisp.github.io/product-preview/](https://developerchrisp.github.io/product-preview/)
 
 ## My process
 
@@ -62,8 +62,6 @@ The <picture> & <article> & <button> class. Info regarding CSS resets. I've hope
 
 - Website - [Developer Chris P](https://developerchrisp.github.io/portfolio)
 - 
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
