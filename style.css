@@ -1,0 +1,184 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Josh Cofmeau reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+body {
+    background-color: var(--seconday);
+    height:100vh;
+    font-size:var(--font-size);
+    font-weight:var(--standard-500);
+    font-family: var(--fontSecondary);
+    color:var(--neutral-2nd);
+    margin:1rem;
+    display:grid;
+    place-content: center;
+    }
+
+h1,h2,h3{
+    font-size: var(--font-size);
+    font-weight: var(--standard-500);
+    line-height: 2rem;
+}
+
+
+
+:root {
+    /*Colours-Main*/
+    --primary:hsl(158, 36%, 37%);
+    --seconday:hsl(30, 38%, 92%);
+    --primary3:hsl(158, 36%, 20%);
+    /*Colours-neutral*/
+    --neutral-1st:hsl(212, 21%, 14%);
+    --neutral-2nd:hsl(228, 12%, 48%);
+    --neutral-3rd:hsl(0, 0%, 100%);
+      
+    /*Font-size*/
+    --font-size:0.875rem;
+
+    /*Font-family*/
+    --fontMain: 'Fraunces', serif;
+    --fontSecondary: 'Montserrat', sans-serif;
+
+    /*Font-weigths*/
+    --standard-500:500;
+    --bold-700:700;
+
+    --border-radius:10px;
+    --gapSize:1rem;
+    --rem:1rem;
+      }
+
+.standardPadding{
+    padding:0 1.5rem;
+}
+
+.flex-group{
+    display:flex;
+    gap:var(--gapSize);
+}
+
+.product{
+    
+    max-width:550px;
+    border-radius: var(--border-radius);
+    overflow:hidden;
+    
+}
+
+#product__image{
+    
+    padding:none;
+    
+    
+}
+.product-grid{
+    display:grid;
+    
+    gap:var(--gapSize);
+    overflow:hidden;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    place-content: center;
+    background-color: var(--neutral-3rd);
+ }
+
+ 
+    
+ 
+    
+
+
+
+@media(min-width:500px){
+    body{margin:0px;}
+   .product{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+        max-width: 540px;
+   }     
+    
+   picture{
+     
+     
+    }
+    .product-grid{
+        border-bottom-left-radius: 0px;
+    }
+}
+
+.product__category{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+  
+.product__title{
+    color:var(--neutral-1st);
+    font-size: 2rem;
+    font-weight: var(--bold-700);
+    font-family: var(--fontMain);
+
+}
+.product-grid>p{
+    line-height:1.3rem;
+}
+
+.flex-group{
+    display:flex;
+    align-items: center;
+}
+
+.product__currentPrice{
+    font-size:1.5rem;
+    color:var(--primary);
+    font-family: var(--fontMain);
+}
+
+.product__previousPrice{
+    text-decoration: line-through;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    background-color: var(--primary);
+    align-items: center;
+    gap:0.5rem;
+    color:var(--neutral-3rd);
+    
+    height:2.5rem;
+    border-radius: var(--border-radius);
+    width:100%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: none;
+    }
+
+button:hover{
+    background-color: var(--primary3);
+}
+button:focus{background-color: var(--primary3);}
+
